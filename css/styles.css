@@ -1,0 +1,212 @@
+/* Core styles */
+
+:root {
+    /* text style varibles */
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --white-text-color: #FFF;
+    --light-text:#F4F4FD;
+    --logo-colored: #4d5ae5;
+
+
+    /* active state style variables */
+    --accent-color: #404BBF;
+    --accent-pressed-state: #4D5AE5;
+
+    /* background style variables */
+    --white-background: #fff;
+    --hero-background: #2E2F42;
+    --dark-color: #2E2F42;
+    --light-background-color: #F4F4FD;
+    --accent-background-color: #404BBF;
+}
+
+a, .link { 
+    color:inherit;
+    font-style: normal;
+    text-decoration: none;
+}
+
+button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+
+/* Fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    
+    letter-spacing: 0.32px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+    background-color: #fff;
+}
+
+.section-heading{
+    font-size: 36px;
+    font-weight: 700;
+    
+    letter-spacing: 0.72px;
+    line-height: 1.11;
+
+    color: var(--title-text-color);
+
+    text-transform: capitalize;
+}
+
+
+.section-heading, 
+.temmate-item
+.portfolio-item{
+    text-align: center;
+}
+
+.item-heading{
+    font-size: 20px;
+    font-weight: 500;
+    
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+
+    color: var(--title-text-color);
+}
+
+
+/* Header styles */
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    line-height: 1.17;
+
+    color: var(--logo-colored);
+
+    text-transform: uppercase;
+}
+
+.logo .colored-text{
+    color: var(--title-text-color);
+}
+
+
+/* Navigation */
+
+.nav-list .nav-link{
+    
+    color: var(--title-text-color);
+}
+
+.nav-list .nav-link,
+.auth-nav .nav-link{
+    font-weight: 500;
+}
+
+.nav-list .nav-link:hover,
+.nav-list .nav-link:active,
+.auth-nav .nav-link:hover,
+.auth-nav .nav-link:active,
+.nav-list .nav-link:focus,
+.auth-nav .nav-link:focus{
+    color: var(--accent-color);
+}
+
+.auth-wrapper{
+    font-style:normal;
+}
+/* Hero section  */
+
+.hero-wrapper{
+    background-color: var(--hero-background);
+}
+
+.hero-title{
+    font-size: 56px;
+    font-weight: 700;
+
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+
+    color: var(--white-text-color);
+    text-align: center;
+}
+
+
+/* hero button */
+
+.button {
+  line-height: inherit;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+  border:none;    
+}
+
+.hero-button{
+
+  background-color: var(--accent-pressed-state);
+  color: var(--white-text-color);
+}
+
+.button:hover,
+.button:focus{
+    background-color: var(--accent-background-color);
+}
+
+
+/* Benefits section  */
+
+/* Skills section  */
+
+
+/* Teammates section  */
+
+.teammate-wrapper{
+    background-color: var(--light-background-color);
+}
+
+.temmate-item{
+    background-color: var(--white-background);
+}
+
+
+/* Footer section  */
+
+.footer-wrapper{
+    color: var(--light-text);
+    background-color: var(--dark-color);
+}
+
+.footer-wrapper .logo .colored-text{
+    color: var(--light-text);
+}
+
+
+
+
+/* Portfolio page  */
+
+/* filter button  */
+
+.filter-button{
+    color: var(--accent-pressed-state);
+    background-color: var(--light-background-color);
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--white-text-color);
+    background-color: var(--accent-background-color);
+}
