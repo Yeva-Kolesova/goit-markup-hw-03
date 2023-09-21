@@ -56,7 +56,7 @@ button {
     cursor: pointer;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -64,16 +64,17 @@ button {
 
 .visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    overflow: hidden;
 }
+
 
 /* Layouts */
 
@@ -135,8 +136,9 @@ body {
 /* Card set  */
 
 .card-set {
-    column-gap: var(--indent-col);
-    row-gap: var(--indent-row);
+    gap: var(--indent-row) var(--indent-col);
+    /* column-gap: ;
+    row-gap: ; */
 }
 
 .card-set-item {
@@ -152,6 +154,12 @@ body {
 .header-container {
     align-items: center;
     justify-content: space-between;
+    max-width: 1158px;
+}
+
+.header-wrapper .container{
+    width: 1158px;
+    padding: 0 15px 0 15px;
 }
 
 .logo {
@@ -218,7 +226,7 @@ body {
     background-color: var(--hero-background);
 }
 
-.hero-wrapper .container {
+.hero-wrapper{
     padding: 188px 0;
 }
 
@@ -254,6 +262,7 @@ body {
 
 .hero-button {
     display: block;
+    min-width: 169px;
     background-color: var(--accent-pressed-state);
     color: var(--white-text-color);
     margin: 0 auto;
@@ -275,7 +284,7 @@ body {
     --indent-col: 18px;
 }
 
-.benefits-heading {
+.benefits-list .item-heading {
     margin-bottom: 8px;
 }
 
@@ -306,12 +315,10 @@ body {
     --indent-col: 18px;
 }
 
-.teammate-img-container {
-    margin-bottom: 32px;
-}
+
 
 .teammate-text-container {
-    padding-bottom: 32px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -339,7 +346,14 @@ body {
     max-width: 264px;
 }
 
+.footer-wrapper .logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
+.footer-wrapper .section-text{
+    max-width: 264px
+}
 
 
 /* Portfolio page  */
@@ -348,8 +362,8 @@ body {
 /* filter button  */
 
 .portfolio-filter-list {
-    max-width: 586px;
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -368,6 +382,7 @@ body {
 .filter-button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-background-color);
+    border: 1px solid transparent
 }
 
 
@@ -381,8 +396,9 @@ body {
 
 .portfolio-list {
     --items: 4;
-    --indent-row: 24px;
-    --indent-col: 18px;
+    /* ??????????????????????????? */
+    --indent-row: 48px;
+    --indent-col: 24x;
 }
 
 .portfolio-item {
@@ -390,8 +406,7 @@ body {
 }
 
 .portfolio-text-container {
-    padding: 32px 16px 0;
-    margin-bottom: 32px;
+    padding: 32px 16px;
 }
 
 .portfolio-text-container .item-heading {
