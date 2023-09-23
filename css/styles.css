@@ -376,7 +376,6 @@ body {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid #E7E9FC;
-    border-top: none;
 }
 
 .filter-button:hover,
@@ -414,6 +413,7 @@ body {
 .portfolio-text-container {
     padding: 32px 16px;
     border:1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-text-container .item-heading {
