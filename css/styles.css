@@ -376,6 +376,7 @@ body {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .filter-button:hover,
